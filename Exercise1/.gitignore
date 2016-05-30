@@ -1,0 +1,13 @@
+
+.DS_Store
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+Exercise1.iml
+out/
+.idea/vcs.xml
+
