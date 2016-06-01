@@ -1,15 +1,19 @@
 package com.thoughtworks.service.models;
 
 import com.thoughtworks.service.enums.ChemicalType;
-import com.thoughtworks.service.enums.Stage;
+import com.thoughtworks.service.enums.MachineType;
 
 /**
  * Created by mallikarjuna on 6/1/16.
  */
 public class Chemical {
 
+    public ChemicalType getType() {
+        return type;
+    }
+
     ChemicalType type;
-    Stage currentStage;
+    MachineType currentMachineType;
 
     int remainingTimeinStage;
 
@@ -25,10 +29,10 @@ public class Chemical {
     }
 
 
-    public void updateStage(Stage stage,int entryTime) {
-        this.currentStage=stage;
+    public void updateStage(MachineType machineType, int entryTime) {
+        this.currentMachineType = machineType;
         this.stageEntrytime=entryTime;
-        this.remainingTimeinStage=type.getTimeInStage(currentStage);
+        this.remainingTimeinStage=type.getTimeInStage(currentMachineType);
     }
 
     public int decrementAndReturnTimeInStage() {

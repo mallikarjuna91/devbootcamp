@@ -24,9 +24,9 @@ public enum ChemicalType {
         this.p = p;
     }
 
-    public int getTimeInStage(Stage stage) {
+    public int getTimeInStage(MachineType machineType) {
 
-        switch (stage) {
+        switch (machineType) {
             case GRINDER:
                 return g;
             case MIXER:
