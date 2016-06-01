@@ -79,7 +79,6 @@ public class ChemicalFactory {
     private void processQueue(int queueIndex, int time) {
         Queue<Chemical> currentQueue = queues.get(queueIndex);
         if (!currentQueue.isEmpty()) {
-
             Chemical chemical = currentQueue.peek();
             if (chemical.getStageEntrytime() != time && chemical.decrementAndReturnTimeInStage() == 0) {
                 currentQueue.remove();

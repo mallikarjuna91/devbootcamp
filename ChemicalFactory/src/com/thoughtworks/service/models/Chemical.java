@@ -8,10 +8,6 @@ import com.thoughtworks.service.enums.Stage;
  */
 public class Chemical {
 
-    public ChemicalType getType() {
-        return type;
-    }
-
     ChemicalType type;
     Stage currentStage;
 
