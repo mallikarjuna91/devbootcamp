@@ -12,15 +12,7 @@ import java.util.*;
  */
 public class ChemicalFactory {
 
-    public static final int COOLER_INDEX = 4;
-    public static final int LAST_QUEUE_INDEX = 5;
-
-    private Queue<Chemical> grinderQueue;
-    private Queue<Chemical> mixerQueue;
-    private Queue<Chemical> reactorQueue;
-    private Queue<Chemical> packagerQueue;
-    private LinkedList<Chemical> cooler;
-
+ 
     private Map<Integer, Machine> machines;
 
 
